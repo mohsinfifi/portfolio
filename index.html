@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohsin's Portfolio | Mobile & Systems Developer</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fc; }
+        .project-card { transition: all 0.3s ease; }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+        .pill { background-color: #e5e7eb; color: #4b5563; padding: 4px 12px; border-radius: 9999px; font-size: 0.875rem; font-weight: 500; }
+        .section-title { position: relative; display: inline-block; padding-bottom: 5px; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 60%; height: 3px; background-color: #10b981; border-radius: 2px; }
+        /* Responsive Grid for Project Images */
+        .app-screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation -->
+    <header class="shadow-lg bg-white sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">Mohsin F.</h1>
+            <nav class="space-x-4 hidden md:flex">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition">Skills</a>
+                <a href="#mobile-projects" class="text-gray-600 hover:text-indigo-600 transition">Mobile Apps</a>
+                <a href="#system-projects" class="text-gray-600 hover:text-indigo-600 transition">System Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition">Contact</a>
+            </nav>
+            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition md:hidden">CV</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Hero Section -->
+        <section id="hero" class="py-16 md:py-24 text-center">
+            <div class="max-w-4xl mx-auto">
+                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 shadow-xl">
+                    <!-- Replace with your professional headshot URL -->
+                    <img src="https://placehold.co/128x128/059669/ffffff?text=Mohsin+Photo" alt="Mohsin's Professional Headshot" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-5xl font-extrabold text-gray-900 mb-4">
+                    Mobile App Expert & System Development Candidate
+                </h2>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    A versatile developer skilled in **Kotlin, Flutter, C/C++, and Python**, currently seeking **Working Student positions in Germany** focused on software architecture, systems engineering, or mobile development.
+                </p>
+                <div class="space-x-4">
+                    <a href="#contact" class="bg-emerald-500 text-white px-8 py-3 rounded-xl font-semibold text-lg hover:bg-emerald-600 transition shadow-lg inline-block">
+                        Get In Touch
+                    </a>
+                    <!-- Replace # with your CV/Lebenslauf link (PDF hosted on Drive/GitHub) -->
+                    <a href="#" class="border border-gray-300 text-gray-700 px-8 py-3 rounded-xl font-semibold text-lg hover:bg-gray-100 transition inline-block">
+                        Download CV (DE/EN)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 border-t border-gray-200">
+            <h3 class="text-3xl font-bold section-title mb-10">Technical Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Mobile Development -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-indigo-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        Mobile Development & Architecture
+                    </h4>
+                    <p class="text-gray-600 mb-4">Expertise in native and cross-platform mobile ecosystems.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="pill">Kotlin</span>
+                        <span class="pill">Flutter / Dart</span>
+                        <span class="pill">MVVM / Clean Architecture</span>
+                        <span class="pill">Reactive Programming (RxJava)</span>
+                        <span class="pill">JNI / NDK (C++)</span>
+                    </div>
+                </div>
+
+                <!-- Core Programming & Systems (Targeted for Embedded) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        Core Languages & System Fundamentals
+                    </h4>
+                    <p class="text-gray-600 mb-4">Foundation in low-level languages and system utilities.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="pill">C/C++</span>
+                        <span class="pill">Python</span>
+                        <span class="pill">OpenCV</span>
+                        <span class="pill">Image Processing</span>
+                        <span class="pill">Linux Environment</span>
+                    </div>
+                </div>
+
+                <!-- ML / Tools & DevOps -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        Data Analysis & Tools
+                    </h4>
+                    <p class="text-gray-600 mb-4">Experience with ML frameworks, data handling, and professional tools.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="pill">TensorFlow / Keras</span>
+                        <span class="pill">REST API (Flask)</span>
+                        <span class="pill">Git / GitHub</span>
+                        <span class="pill">Android Studio / VS Code</span>
+                        <span class="pill">JIRA / Agile</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile App Projects Section -->
+        <section id="mobile-projects" class="py-16 border-t border-gray-200">
+            <h3 class="text-3xl font-bold section-title mb-10">Featured Mobile Applications</h3>
+            <p class="text-gray-600 mb-8">Demonstrating deployment success, high-performance computing, and complex architectural patterns.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Project 1: PDF Scanner -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/10b981/ffffff?text=PDF+Scanner" alt="Screenshot of PDF Scanner App">
+                    <div class="p-5">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Advanced PDF Scanner</h4>
+                        <p class="text-sm font-medium text-indigo-600 mb-3">Kotlin, OpenCV, **C++ via JNI**</p>
+                        <p class="text-gray-700 mb-4 text-sm">A document scanning app (50M+ downloads) where I used **C++ and JNI** to integrate **OpenCV** for high-performance edge detection and image processing, achieving low-latency performance critical for a utility of this scale.</p>
+                        <div class="flex justify-start space-x-3">
+                            <a href="https://play.google.com/store/apps/details?id=com.camscanner.documentscanner.pdfscanner.textscanner.photos.scanner&pli=1" target="_blank" class="text-white bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 transition flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M19 12.5v9h-14v-9H3v-2.5L12 3l9 7v2.5h-2zM17 14h-10v5h10v-5z"/></svg>
+                                Play Store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: TwoFerry & Rydelinx -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/3b82f6/ffffff?text=Ride-Share+Apps" alt="Screenshot of Ride-Sharing App">
+                    <div class="p-5">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Real-Time Ride-Sharing Platforms</h4>
+                        <p class="text-sm font-medium text-indigo-600 mb-3">Kotlin/Java, **RxJava**, Google Maps/Directions API</p>
+                        <p class="text-gray-700 mb-4 text-sm">Developed the advanced ride-booking platforms (TwoFerry & Rydelinx). Implemented **Reactive Programming (RxJava/Observables)** and utilized Google APIs for real-time routing and state management for high data concurrency.</p>
+                        <div class="flex justify-start space-x-3 text-sm">
+                            <a href="https://play.google.com/store/apps/details?id=com.driver.rydelinx" target="_blank" class="text-white bg-green-600 px-3 py-2 rounded-lg font-semibold hover:bg-green-700 transition">
+                                Driver App
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.rider.rydelinx" target="_blank" class="text-white bg-green-600 px-3 py-2 rounded-lg font-semibold hover:bg-green-700 transition">
+                                Rider App
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Smart Serve -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/f59e0b/ffffff?text=Restaurant+App" alt="Screenshot of Smart Serve App">
+                    <div class="p-5">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Smart Serve Management</h4>
+                        <p class="text-sm font-medium text-indigo-600 mb-3">Kotlin, Hilt, Retrofit, **Clean Architecture**</p>
+                        <p class="text-gray-700 mb-4 text-sm">End-to-end restaurant management application built on a robust architecture (**MVVM, Clean Architecture**) using modern libraries like Hilt and Retrofit for scalable, maintainable code and real-time order processing.</p>
+                        <div class="flex justify-start space-x-3">
+                            <a href="#" target="_blank" class="text-white bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 transition flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M19 12.5v9h-14v-9H3v-2.5L12 3l9 7v2.5h-2zM17 14h-10v5h10v-5z"/></svg>
+                                App Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- C/C++/Python/ML Projects Section -->
+        <section id="system-projects" class="py-16 border-t border-gray-200">
+            <h3 class="text-3xl font-bold section-title mb-10">System Engineering & Python Prototypes</h3>
+
+            <p class="text-gray-600 mb-8 font-semibold p-4 border-l-4 border-emerald-500 bg-emerald-50/50 rounded-lg">
+                <span class="font-bold text-emerald-800">Targeting Embedded Roles:</span> While I don't have dedicated embedded experience yet, my C++ (JNI) and Python projects showcase **low-level control, computational efficiency, and systematic problem-solving**—foundational skills essential for embedded systems development.
+            </p>
+
+            <div class="space-y-8">
+                <!-- Project: Python ML - Plant Disease Classification -->
+                <div class="bg-white p-6 rounded-xl shadow-lg project-card flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+                    <div class="md:w-full">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Multi-View CNN Implementation (2024)</h4>
+                        <p class="text-sm font-medium text-indigo-600 mb-4">Python, TensorFlow/Keras, Image Classification</p>
+                        <p class="text-gray-700 mb-4">Developed and trained a multi-view Convolutional Neural Network (CNN) for plant disease image classification. Covered the full implementation cycle from data preprocessing (Plant Village Dataset) to model evaluation. Demonstrates hands-on capability in designing and training complex computational models.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                             <span class="pill">Deep Learning</span>
+                             <span class="pill">Data Preprocessing</span>
+                             <span class="pill">Model Evaluation</span>
+                        </div>
+                        <a href="https://github.com/mohsinfifi/Plant-Disease-Classification" target="_blank" class="text-gray-700 border border-gray-300 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-100 transition flex items-center w-max">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.802 8.207 11.387.6.11.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.545-1.385-1.33-1.75-1.33-1.75-1.087-.743.082-.728.082-.728 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.493.996.108-.775.419-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.468-2.38 1.236-3.221-.124-.303-.537-1.52.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.654 1.656.241 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.922.43.37.817 1.103.817 2.227 0 1.604-.015 2.899-.015 3.298 0 .32.217.695.825.576C20.565 21.802 24 17.302 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            View GitHub Repo
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Project: Python Image Processing & ML -->
+                <div class="bg-white p-6 rounded-xl shadow-lg project-card flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+                    <div class="md:w-full">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Fingerprint Classification System (2023)</h4>
+                        <p class="text-sm font-medium text-indigo-600 mb-4">Python, Image Processing, Feature Extraction, SVM</p>
+                        <p class="text-gray-700 mb-4">Implemented a system for fingerprint classification combining rigorous **image preprocessing, manual feature extraction (minutiae)**, and a basic machine learning classifier (SVM). This showcases hands-on work with data pipelines and algorithm implementation at the processing level.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                             <span class="pill">Biometric Systems</span>
+                             <span class="pill">Data Processing</span>
+                             <span class="pill">SVM Classifier</span>
+                        </div>
+                        <a href="https://github.com/mohsinfifi/Part-of-Speech-Tagging" target="_blank" class="text-gray-700 border border-gray-300 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-100 transition flex items-center w-max">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.802 8.207 11.387.6.11.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.545-1.385-1.33-1.75-1.33-1.75-1.087-.743.082-.728.082-.728 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.493.996.108-.775.419-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.468-2.38 1.236-3.221-.124-.303-.537-1.52.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.654 1.656.241 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.922.43.37.817 1.103.817 2.227 0 1.604-.015 2.899-.015 3.298 0 .32.217.695.825.576C20.565 21.802 24 17.302 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            View GitHub Repo
+                        </a>
+                    </div>
+                </div>
+                
+                 <!-- Project: Python NER & Flask -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                     <!-- Project: Python NER -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg project-card">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Named-Entity Recognition (NER)</h4>
+                        <p class="text-sm font-medium text-indigo-600 mb-4">Python, spaCy, CRF Concepts</p>
+                        <p class="text-gray-700 mb-4 text-sm">Implemented NER, a fundamental task in information analysis, using machine learning concepts and the spaCy library. This demonstrates proficiency in system design for complex text processing pipelines.</p>
+                        <a href="https://github.com/mohsinfifi/Named-Entity-Recognition" target="_blank" class="text-gray-700 border border-gray-300 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-100 transition flex items-center w-max">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.802 8.207 11.387.6.11.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.545-1.385-1.33-1.75-1.33-1.75-1.087-.743.082-.728.082-.728 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.493.996.108-.775.419-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.468-2.38 1.236-3.221-.124-.303-.537-1.52.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.654 1.656.241 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.922.43.37.817 1.103.817 2.227 0 1.604-.015 2.899-.015 3.298 0 .32.217.695.825.576C20.565 21.802 24 17.302 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            View GitHub Repo
+                        </a>
+                    </div>
+                     <!-- Project: Python Flask API -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg project-card">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">REST API Prototyping with Flask</h4>
+                        <p class="text-sm font-medium text-indigo-600 mb-4">Python, Flask, Backend Development</p>
+                        <p class="text-gray-700 mb-4 text-sm">Developed secure REST APIs using the Python Flask framework for data exchange and service delivery. This demonstrates fundamental skills in defining interfaces and handling data flow, applicable to various system backends.</p>
+                        <a href="#" target="_blank" class="text-gray-700 border border-gray-300 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-100 transition flex items-center w-max">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.802 8.207 11.387.6.11.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.545-1.385-1.33-1.75-1.33-1.75-1.087-.743.082-.728.082-.728 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.493.996.108-.775.419-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.468-2.38 1.236-3.221-.124-.303-.537-1.52.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.654 1.656.241 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.922.43.37.817 1.103.817 2.227 0 1.604-.015 2.899-.015 3.298 0 .32.217.695.825.576C20.565 21.802 24 17.302 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            View GitHub Repo
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 border-t border-gray-200">
+            <h3 class="text-3xl font-bold section-title mb-10">Let's Connect in Germany</h3>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <p class="text-lg text-gray-600 mb-6 text-center">I'm actively seeking Working Student roles (Werkstudent) starting immediately in **[Your Target City, e.g., Munich/Berlin]**.</p>
+                <div class="space-y-4 text-center">
+                    <p class="text-xl font-semibold text-gray-800">Email: <a href="mailto:your.email@example.com" class="text-indigo-600 hover:underline">your.email@example.com</a> (Replace with yours)</p>
+                    <p class="text-xl font-semibold text-gray-800">Phone (DE): <a href="tel:+491234567890" class="text-indigo-600 hover:underline">+49 123 4567890</a> (Replace with yours)</p>
+                    <div class="flex justify-center space-x-6 pt-4">
+                        <!-- Replace # with your LinkedIn and GitHub URLs -->
+                        <a href="#" target="_blank" class="text-gray-700 hover:text-indigo-600 transition" aria-label="LinkedIn Profile">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.367-4-3.533-4 0v5.604h-3v-11h3v1.765c1.397-2.673 6-2.359 6-3.053v6.182z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" class="text-gray-700 hover:text-indigo-600 transition" aria-label="GitHub Profile">
+                             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.802 8.207 11.387.6.11.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.545-1.385-1.33-1.75-1.33-1.75-1.087-.743.082-.728.082-.728 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.493.996.108-.775.419-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.468-2.38 1.236-3.221-.124-.303-.537-1.52.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.654 1.656.241 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.922.43.37.817 1.103.817 2.227 0 1.604-.015 2.899-.015 3.298 0 .32.217.695.825.576C20.565 21.802 24 17.302 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 py-6 border-t border-gray-200 bg-white">
+        <p class="text-center text-gray-500 text-sm">&copy; 2025 Mohsin M. Built with HTML and Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
